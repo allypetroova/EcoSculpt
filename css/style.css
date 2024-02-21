@@ -1,0 +1,79 @@
+@import url("reset.css");
+
+body{
+    font-family: 'Montserat', sans-serif;
+    color: #525252;
+}
+
+a{
+    color: inherit;
+}
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    aspect-ratio: 1440 / 1024;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1244px;
+}
+
+.header__nav {
+    padding: 28px 0;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr;
+    gap: 172px;
+}
+
+.nav__logo {
+    align-self: center;
+}
+
+.logo {
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+}
+
+.nav__list-item {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav__btn {
+    padding: 16px 40px;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.btn-green {
+    color: #FFFFFF;
+    background-color: #2DA884;
+    border-radius: 100px;
+}
+
+.btn-white {
+    color: #2DA884;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+}
