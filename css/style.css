@@ -23,6 +23,19 @@ a{
     max-width: 1244px;
 }
 
+.title {
+    margin-bottom: 24px;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 72px;
+    color: #232A42;
+    text-transform: capitalize;
+}
+
+.title-green{
+    color: #2DA884;
+}
+
 .header__nav {
     padding: 28px 0;
 }
@@ -138,4 +151,99 @@ a{
     font-weight: 500;
     line-height: 24px;
     color: #525252;
+}
+
+
+/*-----------expertise-----------*/
+
+.expertise {
+    padding: 80px 0 160px;
+}
+.expertise__title {
+    max-width: 824px;
+}
+.expertise__text {
+    margin-bottom: 80px;
+    max-width: 824px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.expertise__inner {
+    display: flex;
+}
+.expertise__cards {
+    flex-basis: 552px;
+    margin-right: 96px;
+}
+.expertise__card {
+    margin-bottom: 40px;
+    padding: 128px 24px 40px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: top 40px left 24px;
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+}
+.expertise__card:last-child{
+    margin: 0;
+}
+.expertise__card-1 {
+    background-image: url(../images/expertise__card-1.svg);
+}
+.expertise__card-2 {
+    background-image: url(../images/expertise__card-2.svg);
+}
+.expertise__card-title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.expertise__card-text {
+    max-width: 504px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.expertise__inner-img {
+    flex-basis: 596px;
+    object-fit: cover;
+}
+
+
+/*-----------benefits-----------*/
+
+.benefits {
+    padding-bottom: 140px;
+}
+.benefits__inner {
+    display: flex;
+}
+.benefits-img {
+    flex-basis: 538px;
+    margin-right: 96px;
+    object-fit: cover;
+}
+.benefits__content {
+    flex-basis: 610px;
+}
+.benefits__content-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.benefits__list-item {
+    margin-bottom: 40px;
+    padding: 8px 0 8px 72px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.benefits__list-item:last-child{
+    margin: 0;
 }
