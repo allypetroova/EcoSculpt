@@ -32,7 +32,7 @@ a{
     text-transform: capitalize;
 }
 
-.title-green{
+.text-green{
     color: #2DA884;
 }
 
@@ -100,13 +100,13 @@ a{
     padding: 80px 0;
     text-align: center;
 }
-.header__content-title {
+.header__title {
     margin-bottom: 24px;
     font-size: 138px;
     font-weight: 700;
     line-height: 144px;
 }
-.header__content-text {
+.header__text {
     margin: 0 auto;
     max-width: 680px;
     margin-bottom: 56px;
@@ -114,19 +114,19 @@ a{
     font-weight: 500;
     line-height: 24px;
 }
-.header__content-buttons {
+.header__buttons {
     display: flex;
     gap: 40px;
     justify-content: center;
     margin-bottom: 104px;
 }
-.header__content-btn {
+.header__btn {
     padding: 32px 40px;
     font-size: 21px;
     font-weight: 600;
     line-height: 24px;
 }
-.advantages__list {
+.advantages {
     display: flex;
     padding: 32px;
     gap: 130px;
@@ -136,17 +136,17 @@ a{
 }
 .advantages__list-item {
 }
-.advantages__list-number {
+.advantages__inner {
     margin-bottom: 8px;
     font-size: 50px;
     line-height: 56px;
     font-weight: 600;
     color: #232A42;
 }
-.text-green {
-    color: #2DA884;
+.advantages__number{
+    color: #232A42;
 }
-.advantages__list-title {
+.advantages__title {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -159,12 +159,14 @@ a{
 .expertise {
     padding: 80px 0 160px;
 }
-.expertise__title {
+.expertise__top{
     max-width: 824px;
+    text-align: left;
 }
 .expertise__text {
     margin-bottom: 80px;
-    max-width: 824px;
+}
+.text{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -202,9 +204,6 @@ a{
 }
 .expertise__card-text {
     max-width: 504px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
 }
 .expertise__inner-img {
     flex-basis: 596px;
@@ -228,11 +227,8 @@ a{
 .benefits__content {
     flex-basis: 610px;
 }
-.benefits__content-text {
+.benefits__text {
     margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
 }
 .benefits__list-item {
     margin-bottom: 40px;
@@ -246,4 +242,66 @@ a{
 }
 .benefits__list-item:last-child{
     margin: 0;
+}
+
+
+/*-----------services-----------*/
+
+.services {
+    padding-bottom: 160px;
+}
+.services__top {
+    margin-bottom: 80px;
+    max-width: 680px;
+    text-align: left;
+}
+.services__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 40px;
+}
+.services__card {
+    padding: 40px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: top 40px left 24px;
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%)
+}
+
+
+
+
+
+
+.services__card-title {
+}
+.services__card-text {
+}   
+
+
+.services__card-1 {
+    background-image: url(../images/eservices__card-1.svg);
+}
+.fill:hover{
+    fill: #fff
+}
+
+
+
+.services__card-2 {
+    background-image: url(../images/eservices__card-2.svg);
+}
+.services__card-3 {
+    background-image: url(../images/eservices__card-3.svg);
+}
+.services__card-4 {
+    background-image: url(../images/eservices__card-4.svg);
+}
+.services__card-5 {
+    background-image: url(../images/eservices__card-5.svg);
+}
+.services__card-6 {
+    background-image: url(../images/eservices__card-6.svg);
 }
