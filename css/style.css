@@ -284,9 +284,6 @@ a{
 .services__card-1 {
     background-image: url(../images/eservices__card-1.svg);
 }
-.fill:hover{
-    fill: #fff
-}
 
 
 
@@ -304,4 +301,44 @@ a{
 }
 .services__card-6 {
     background-image: url(../images/eservices__card-6.svg);
+}
+
+/*-----------prices-----------*/
+
+.prices {
+    padding-bottom: 80px;
+}
+.prices__tabs {
+}
+.prices__card {
+}
+.prices__desc {
+}
+.prices__desc-title {
+}
+.prices__desc-text {
+}
+.prices__price {
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 72px;
+    color: #2DA884;
+}
+.prices__period {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.prices__list {
+}
+.prices__list-item {
+}
+.prices__link {
+    padding: 24px 40px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #2DA884;
+    border-radius: 100px;
 }
