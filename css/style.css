@@ -52,6 +52,7 @@ a{
 
 .logo {
     font-size: 38px;
+    font-weight: 600;
     line-height: 48px;
 }
 
@@ -341,4 +342,72 @@ a{
     color: #FFFFFF;
     background-color: #2DA884;
     border-radius: 100px;
+}
+
+/*-----------footer-----------*/
+
+.footer {
+    padding: 100px 0;
+    color: #FFFFFF;
+    background-color: #2DA884;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__desc {
+}
+
+.footer__logo{
+    margin-bottom: 40px;
+}
+.footer__text {
+    max-width: 270px;
+}
+.footer__nav {
+}
+.footer__title {
+    margin-bottom: 40px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.footer__nav-list {
+}
+.footer__nav-item {
+    margin-bottom: 20px;
+}
+.footer__nav-item:last-child{
+    margin: 0;
+}
+.footer__contact {
+}
+.footer__list-link {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.mail {
+    background-image: url(../images/mail.svg);
+}
+.location {
+    max-width: 270px;
+    background-image: url(../images/location.svg);
+}
+.phone {
+    background-image: url(../images/phone.svg);
+}
+.footer__net {
+}
+.footer__links {
+    display: flex;
+    gap: 32px;
+}
+.footer__link {
+}
+.footer__link-img {
 }
