@@ -9,7 +9,12 @@ a{
     color: inherit;
 }
 
+.none{
+    display: none;
+}
+
 .header {
+    padding-top: 24px;
     background-image: url(../images/header-bg.jpg);
     aspect-ratio: 1440 / 1024;
     background-repeat: no-repeat;
@@ -19,8 +24,9 @@ a{
 }
 
 .container {
+    max-width: 1274px;
     margin: 0 auto;
-    max-width: 1244px;
+    padding: 0 15px;
 }
 
 .title {
@@ -32,126 +38,156 @@ a{
     text-transform: capitalize;
 }
 
-.text-green{
-    color: #2DA884;
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .header__nav {
-    padding: 28px 0;
-}
-
-.nav {
-    display: grid;
-    grid-template-columns: 2fr 4fr 4fr;
-    gap: 172px;
-}
-
-.nav__logo {
-    align-self: center;
+    margin-bottom: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     font-size: 38px;
-    font-weight: 600;
     line-height: 48px;
+    font-weight: 600;
 }
 
 .nav__list {
     display: flex;
-    align-items: center;
     gap: 77px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
-.nav__list-item {
-    font-size: 16px;
-    line-height: 24px;
+.nav__list-link {
+    transition: all 0.1s ease-in;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.nav__list-link--dropdown{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::after{
+        content: url(./../images/icons/arrow.svg);
+        height: 24px;
+    }
 }
 
 .nav__buttons {
     display: flex;
-    align-items: center;
     gap: 32px;
 }
 
-.nav__btn {
+.header__btn {
     padding: 16px 40px;
     font-size: 21px;
-    line-height: 24px;
     font-weight: 600;
+    line-height: 24px;
+    border-radius: 100px;
+}
+
+.header__content .header__btn{
+    padding: 32px 40px;
 }
 
 .btn-green {
     color: #FFFFFF;
     background-color: #2DA884;
-    border-radius: 100px;
 }
 
 .btn-white {
     color: #2DA884;
     background-color: #FFFFFF;
-    border-radius: 100px;
 }
 
-
-
-
-
-
-.header__content{
-    padding: 80px 0;
+.header__content {
     text-align: center;
 }
+
 .header__title {
     margin-bottom: 24px;
     font-size: 138px;
     font-weight: 700;
     line-height: 144px;
+    text-wrap: balance;
 }
+
 .header__text {
     margin: 0 auto;
-    max-width: 680px;
+    max-width: 698px;
     margin-bottom: 56px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+    text-wrap: balance;
 }
+
 .header__buttons {
-    display: flex;
+    margin: 0 auto;
+    display: inline-flex;
     gap: 40px;
-    justify-content: center;
     margin-bottom: 104px;
 }
-.header__btn {
-    padding: 32px 40px;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 24px;
-}
+
 .advantages {
+    margin: 0 auto;
     display: flex;
-    padding: 32px;
-    gap: 130px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    width: 986px;
+    height: 152px;
     background-color: #FFFFFF;
     border-radius: 16px;
 }
-.advantages__list-item {
+
+.advantages__item {
+    vertical-align: middle;
 }
-.advantages__inner {
+
+.advantages__number {
     margin-bottom: 8px;
     font-size: 50px;
-    line-height: 56px;
     font-weight: 600;
+    line-height: 56px;
     color: #232A42;
 }
-.advantages__number{
-    color: #232A42;
+
+.text-green {
+    color: #2DA884;
 }
+
 .advantages__title {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #525252;
+}
+
+/*-----------feedback-----------*/
+
+.feedback {
+    padding-bottom: 80px;
+}
+.feedback__top{
+    text-align: center;
+}
+.feedback__title {
+    margin: 0 auto;
+}
+.feedback__text {
+    margin: 0 auto;
+    max-width: 830px;
 }
 
 
@@ -376,20 +412,20 @@ a{
     font-weight: 600;
     line-height: 24px;
 }
-.footer__nav-list {
+.footer__contact {
 }
-.footer__nav-item {
+.footer__list{}
+.footer__list-item{
     margin-bottom: 20px;
 }
-.footer__nav-item:last-child{
+.footer__list-item:last-child{
     margin: 0;
-}
-.footer__contact {
 }
 .footer__list-link {
     padding-left: 20px;
     background-repeat: no-repeat;
     background-position: left;
+    vertical-align: baseline;
 }
 .mail {
     background-image: url(../images/mail.svg);
@@ -408,6 +444,10 @@ a{
     gap: 32px;
 }
 .footer__link {
+    width: 40px;
+    height: 40px;
 }
 .footer__link-img {
+    max-height:100%;
+    max-width: 100%;
 }
