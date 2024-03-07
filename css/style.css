@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 body{
-    font-family: var(--font-second);
+    font-family: var(--font-main);
     color: var(--text-muted);
 }
 
@@ -16,14 +16,13 @@ a{
 }
 
 .header {
-    padding-top: 24px;
+    padding: 24px 0 80px;
     background-image: url(../images/header-bg.jpg);
     aspect-ratio: 1440 / 1024;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     color: var(--white-text-color);
-    font-family: var(--font-main);
 }
 
 .container {
@@ -39,7 +38,13 @@ a{
     line-height: 72px;
     color: var(--text-color);
     text-transform: capitalize;
-    font-family: var(--font-main);
+}
+
+.title-medium{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--text-color);
 }
 
 .text{
@@ -47,6 +52,7 @@ a{
     font-weight: 500;
     line-height: 24px;
     font-family: var(--font-second);
+    text-wrap: balance;
 }
 
 .header__nav {
@@ -127,7 +133,6 @@ a{
     font-size: 138px;
     font-weight: 700;
     line-height: 144px;
-    text-wrap: balance;
 }
 
 .header__text {
@@ -209,11 +214,11 @@ a{
 
 .expertise__card-1 {
     margin-bottom: 40px;
-    background-image: url(../images/expertise__card-1.svg);
+    background-image: url(../images/icons/expertise__card-1.svg);
 }
 
 .expertise__card-2 {
-    background-image: url(../images/expertise__card-2.svg);
+    background-image: url(../images/icons/expertise__card-2.svg);
 }
 
 .expertise__card-title {
@@ -221,7 +226,6 @@ a{
     font-size: 28px;
     line-height: 32px;
     font-weight: 600;
-    font-family: var(--font-main);
 }
 
 .expertise__inner-img {
@@ -236,32 +240,37 @@ a{
 .benefits {
     padding-bottom: 140px;
 }
+
 .benefits__inner {
     display: flex;
 }
+
 .benefits-img {
     flex-basis: 538px;
     margin-right: 96px;
     object-fit: cover;
+    border-radius: 16px;
 }
+
 .benefits__content {
     flex-basis: 610px;
 }
+
 .benefits__text {
     margin-bottom: 40px;
 }
+
+.benefits__list{
+    display: grid;
+    gap: 40px;
+}
+
 .benefits__list-item {
-    margin-bottom: 40px;
     padding: 8px 0 8px 72px;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 32px;
+    padding-left: 72px;
     background-image: url(../images/checkbox.svg);
     background-repeat: no-repeat;
     background-position: left;
-}
-.benefits__list-item:last-child{
-    margin: 0;
 }
 
 
@@ -270,57 +279,83 @@ a{
 .services {
     padding-bottom: 160px;
 }
+
 .services__top {
     margin-bottom: 80px;
     max-width: 680px;
     text-align: left;
 }
+
 .services__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
     gap: 40px;
 }
+
 .services__card {
-    padding: 40px 24px;
-    border-radius: 16px;
-    background-color: #FFFFFF;
+    padding: 128px 24px 40px 24px;
     background-repeat: no-repeat;
     background-position: top 40px left 24px;
-    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%)
+    border-radius: 16px;
+    background-color: var(--ui-color);
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+
+    &:hover{
+        color: var(--white-text-color);
+        background-color: var(--accent);
+    }
 }
-
-
-
-
-
 
 .services__card-title {
+    margin-bottom: 16px;
 }
-.services__card-text {
-}   
-
 
 .services__card-1 {
-    background-image: url(../images/eservices__card-1.svg);
+    background-image: url(../images/icons/services__card-1.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-1-white.svg);
+    }
 }
-
-
-
 .services__card-2 {
-    background-image: url(../images/eservices__card-2.svg);
+    background-image: url(../images/icons/services__card-2.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-2-white.svg);
+    }
 }
+
 .services__card-3 {
-    background-image: url(../images/eservices__card-3.svg);
+    background-image: url(../images/icons/services__card-3.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-3-white.svg);
+    }
 }
+
 .services__card-4 {
-    background-image: url(../images/eservices__card-4.svg);
+    background-image: url(../images/icons/services__card-4.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-4-white.svg);
+    }
 }
+
 .services__card-5 {
-    background-image: url(../images/eservices__card-5.svg);
+    background-image: url(../images/icons/services__card-5.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-5-white.svg);
+    }
 }
+
 .services__card-6 {
-    background-image: url(../images/eservices__card-6.svg);
+    background-image: url(../images/icons/services__card-6.svg);
+
+    &:hover{
+        background-image: url(../images/icons/services__card-6-white.svg);
+    }
 }
 
 /*-----------prices-----------*/
