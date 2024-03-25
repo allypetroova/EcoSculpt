@@ -1,20 +1,37 @@
+/*
+===============
+Fonts and styles
+===============
+*/
 @import "reset.css";
-@import "vars.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/*
+===============
+Variables
+===============
+*/
+:root{
+    --text-color: #232A42;
+    --text-muted: #525252;
+    --accent: #2DA884;
 
+    --white-text-color: #ffffff;
+    --ui-color: #ffffff;
+
+    --font-main: 'Montserrat', sans-serif;
+    --font-second: 'Plus Jakarta Sans', sans-serif;
+}
+/*
+===============
+Global Styles
+===============
+*/
 body{
     font-family: var(--font-main);
-    color: var(--text-muted);
 }
-
-a{
-    color: inherit;
-}
-
 .none{
     display: none;
 }
-
 .header {
     padding: 24px 0 80px;
     background-image: url(../images/header-bg.jpg);
@@ -24,13 +41,11 @@ a{
     background-size: cover;
     color: var(--white-text-color);
 }
-
 .container {
     max-width: 1274px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
 .title {
     margin-bottom: 24px;
     font-size: 67px;
@@ -39,53 +54,46 @@ a{
     color: var(--text-color);
     text-transform: capitalize;
 }
-
 .title-medium{
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
     color: var(--text-color);
 }
-
 .text{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     font-family: var(--font-second);
-    text-wrap: balance;
 }
-
 .header__nav {
     margin-bottom: 104px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo {
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
+    color: var(--white-text-color);
 }
-
 .nav__list {
     display: flex;
     gap: 77px;
-    justify-content: center;
     align-items: center;
+}
+.nav__list-link {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-}
-
-.nav__list-link {
+    color: var(--white-text-color);
     transition: all 0.1s ease-in;
 
     &:hover{
         opacity: 0.7;
     }
 }
-
 .nav__list-link--dropdown{
     display: flex;
     align-items: center;
@@ -97,11 +105,12 @@ a{
     }
 }
 
+/* Header buttons */
+
 .nav__buttons {
     display: flex;
     gap: 32px;
 }
-
 .header__btn {
     padding: 16px 40px;
     font-size: 21px;
@@ -109,62 +118,67 @@ a{
     line-height: 24px;
     border-radius: 100px;
 }
-
-.header__content .header__btn{
+.header__btn--big{
     padding: 32px 40px;
 }
-
 .btn-green {
     color: var(--white-text-color);
     background-color: var(--accent);
 }
-
 .btn-white {
     color: var(--accent);
     background-color: var(--ui-color);
 }
-
 .header__content {
     text-align: center;
 }
-
 .header__title {
     margin-bottom: 24px;
     font-size: 138px;
     font-weight: 700;
     line-height: 144px;
 }
-
 .header__text {
     margin: 0 auto;
     max-width: 698px;
     margin-bottom: 56px;
-    text-wrap: balance;
 }
-
 .header__buttons {
     margin: 0 auto;
-    display: inline-flex;
+    display: flex;
     gap: 40px;
     margin-bottom: 104px;
+    justify-content: center;
 }
+
+/* Advantages */
 
 .advantages {
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px;
-    width: 986px;
+    padding: 32px;
+    max-width: 986px;
     height: 152px;
     background-color: var(--ui-color);
     border-radius: 16px;
 }
-
-.advantages__item {
-    vertical-align: middle;
+/*.advantages__item{
+    position: relative;
 }
+.advantages__item::after{
+    position: absolute;
+    top: 8px;
+    left: 150%;
+    bottom: 8px;
 
+    content: '';
+    display: block;
+    width: 1px;
+    height: 72px;
+    background-color: #525252;
+}*/
 .advantages__number {
     margin-bottom: 8px;
     font-size: 50px;
@@ -172,18 +186,17 @@ a{
     line-height: 56px;
     color: var(--text-color);
 }
-
 .text-green {
     color: var(--accent);
 }
-
 .advantages__title {
     color: var(--text-muted);
 }
-
-
-/*-----------expertise-----------*/
-
+/*
+===============
+Expertise
+===============
+*/
 .expertise {
     padding: 80px 0 160px;
 }
@@ -233,10 +246,11 @@ a{
     object-fit: cover;
     border-radius: 16px;
 }
-
-
-/*-----------benefits-----------*/
-
+/*
+===============
+Benefits
+===============
+*/
 .benefits {
     padding-bottom: 140px;
 }
@@ -272,10 +286,11 @@ a{
     background-repeat: no-repeat;
     background-position: left;
 }
-
-
-/*-----------services-----------*/
-
+/*
+===============
+Services
+===============
+*/
 .services {
     padding-bottom: 160px;
 }
@@ -357,10 +372,12 @@ a{
         background-image: url(../images/icons/services__card-6-white.svg);
     }
 }
-
-/*-----------prices-----------
-
-.prices {
+/*
+===============
+Prices
+===============
+*/
+/*.prices {
     padding-bottom: 80px;
 }
 .prices__tabs {
@@ -397,11 +414,11 @@ a{
     background-color: #2DA884;
     border-radius: 100px;
 }*/
-
-
-
-/*-----------reviews-----------*/
-
+/*
+===============
+Reviews
+===============
+*/
 .reviews {
     padding-bottom: 160px;
 }
@@ -460,11 +477,11 @@ a{
 }
 .reviews__card-stars {
 }
-
-
-
-/*-----------feedback-----------*/
-
+/*
+===============
+Feedback
+===============
+*/
 .feedback {
     padding-bottom: 80px;
 }
@@ -478,9 +495,11 @@ a{
     margin: 0 auto;
     max-width: 830px;
 }
-
-/*-----------footer-----------*/
-
+/*
+===============
+Footer
+===============
+*/
 .footer {
     padding: 100px 0;
     color: #FFFFFF;
