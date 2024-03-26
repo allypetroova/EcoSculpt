@@ -200,47 +200,41 @@ Expertise
 .expertise {
     padding: 80px 0 160px;
 }
-
 .expertise__top{
     margin-bottom: 80px;
     max-width: 823px;
     text-align: left;
 }
-
 .expertise__inner {
     display: flex;
 }
-
 .expertise__cards {
     flex-basis: 552px;
     margin-right: 96px;
 }
-
 .expertise__card {
     padding: 128px 24px 40px;
-    border-radius: 16px;
     background-color: var(--ui-color);
+    border-radius: 16px;
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+
     background-repeat: no-repeat;
     background-position: top 40px left 24px;
-    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
 }
-
 .expertise__card-1 {
     margin-bottom: 40px;
     background-image: url(../images/icons/expertise__card-1.svg);
 }
-
 .expertise__card-2 {
     background-image: url(../images/icons/expertise__card-2.svg);
 }
-
 .expertise__card-title {
     margin-bottom: 16px;
     font-size: 28px;
     line-height: 32px;
     font-weight: 600;
+    color: var(--text-color);
 }
-
 .expertise__inner-img {
     flex-basis: 596px;
     object-fit: cover;
@@ -254,34 +248,28 @@ Benefits
 .benefits {
     padding-bottom: 140px;
 }
-
 .benefits__inner {
     display: flex;
 }
-
 .benefits-img {
     flex-basis: 538px;
     margin-right: 96px;
     object-fit: cover;
     border-radius: 16px;
 }
-
 .benefits__content {
     flex-basis: 610px;
 }
-
-.benefits__text {
+.benefits__top{
     margin-bottom: 40px;
 }
-
 .benefits__list{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
 }
-
 .benefits__list-item {
-    padding: 8px 0 8px 72px;
-    padding-left: 72px;
+    padding: 8px 8px 8px 72px;
     background-image: url(../images/checkbox.svg);
     background-repeat: no-repeat;
     background-position: left;
@@ -294,7 +282,6 @@ Services
 .services {
     padding-bottom: 160px;
 }
-
 .services__top {
     margin-bottom: 80px;
     max-width: 680px;
@@ -303,29 +290,28 @@ Services
 
 .services__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 40px;
 }
 
 .services__card {
     padding: 128px 24px 40px 24px;
-    background-repeat: no-repeat;
-    background-position: top 40px left 24px;
     border-radius: 16px;
     background-color: var(--ui-color);
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+
+    background-repeat: no-repeat;
+    background-position: top 40px left 24px;
 
     &:hover{
         color: var(--white-text-color);
         background-color: var(--accent);
     }
 }
-
 .services__card-title {
     margin-bottom: 16px;
 }
-
 .services__card-1 {
     background-image: url(../images/icons/services__card-1.svg);
 
@@ -340,7 +326,6 @@ Services
         background-image: url(../images/icons/services__card-2-white.svg);
     }
 }
-
 .services__card-3 {
     background-image: url(../images/icons/services__card-3.svg);
 
@@ -348,7 +333,6 @@ Services
         background-image: url(../images/icons/services__card-3-white.svg);
     }
 }
-
 .services__card-4 {
     background-image: url(../images/icons/services__card-4.svg);
 
@@ -356,7 +340,6 @@ Services
         background-image: url(../images/icons/services__card-4-white.svg);
     }
 }
-
 .services__card-5 {
     background-image: url(../images/icons/services__card-5.svg);
 
@@ -364,7 +347,6 @@ Services
         background-image: url(../images/icons/services__card-5-white.svg);
     }
 }
-
 .services__card-6 {
     background-image: url(../images/icons/services__card-6.svg);
 
