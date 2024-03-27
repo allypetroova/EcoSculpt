@@ -359,43 +359,111 @@ Services
 Prices
 ===============
 */
-/*.prices {
+.prices {
     padding-bottom: 80px;
 }
-.prices__tabs {
+.prices__top {
+    text-align: center;
 }
-.prices__card {
+.prices__text{
+    margin: 0 auto;
+    max-width: 730px;
+    margin-bottom: 80px;
+}
+.prices__tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 388px);
+    gap: 40px;
+}
+.prices__tab {
+    background-color: var(--ui-color);
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+    border-radius: 16px;
+}
+.prices__tab-1{
+    max-height: 712px;
+}
+.prices__tab-2{
+    max-height: 768px;
+}
+.prices__tab-3{
+    max-height: 824px;
 }
 .prices__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 30px;
+    
+    background-color: var(--accent);
+    border-radius: 16px 16px 0 0;
 }
 .prices__desc-title {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white-text-color);
 }
-.prices__desc-text {
+.prices__desc-type {
+    padding: 16px 19px;
+    color: var(--accent);
+    background-color: var(--ui-color);
 }
-.prices__price {
+.prices__button{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 100px;
+}
+.prices__payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: var(--accent);
+    border-bottom: solid 3px var(--accent);
+}
+.prices__payment-price {
+    margin-bottom: 16px;
     font-size: 67px;
     font-weight: 600;
     line-height: 72px;
-    color: #2DA884;
 }
-.prices__period {
+.prices__payment-period {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
 }
-.prices__list {
+.prices__services {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
-.prices__list-item {
+.prices__services-list {
+    margin-bottom: 40px;
 }
-.prices__link {
-    padding: 24px 40px;
-    font-size: 21px;
-    font-weight: 600;
+.prices__services-item {
+    margin-bottom: 16px;
+    padding: 0 0 16px 40px;
+    
+    font-size: 16px;
+    font-weight: 500;
     line-height: 24px;
-    color: #FFFFFF;
-    background-color: #2DA884;
-    border-radius: 100px;
-}*/
+    color: var(--accent);
+
+    background-image: url(../images/icons/prices__list.svg);
+    background-position: top 0 left 0;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px var(--accent);
+}
+.prices__services-item:last-child{
+    margin-bottom: 0;
+}
+.prices__services-btn {
+    padding: 24px 40px;
+    color: var(--white-text-color);
+    background-color: var(--accent);
+}
 /*
 ===============
 Reviews
