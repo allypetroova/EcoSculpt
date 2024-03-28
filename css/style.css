@@ -360,7 +360,7 @@ Prices
 ===============
 */
 .prices {
-    padding-bottom: 80px;
+    padding-bottom: 160px;
 }
 .prices__top {
     text-align: center;
@@ -473,48 +473,52 @@ Reviews
     padding-bottom: 160px;
 }
 .reviews__top {
-    margin: 0 auto;
-    margin-bottom: 80px;
-    max-width: 939px;
     text-align: center;
+}
+.reviews__text{
+    margin: 0 auto;
+    max-width: 940px;
+    margin-bottom: 80px;
 }
 .reviews__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 40px;
 }
 .reviews__card {
+    position: relative;
     padding: 32px 40px 32px 65px;
-    border-radius: 16px;
+    margin-left: 44px;
     background-color: var(--ui-color);
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
-    position: relative;
+    border-radius: 16px;
 }
-.reviews__card-img{
-    width: 80px;
-    height: 80px;
+.reviews__card-img {
     position: absolute;
     z-index: 1;
-    top:  75px;
-    left: 0px;
-    transform: translate(-50%, 0%);
-    border-radius: 100px;
-    box-shadow: 2px 6px 28px 0 rgb(108, 108, 108, 25%);
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
-.reviews__card p{
+.reviews__card-content {
+}
+.reviews__card_text{
     margin-bottom: 40px;
 }
 .reviews__card-bottom {
-    max-width: 453px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .reviews__card-user {
+    display: flex;
+    flex-direction: column;
 }
 .reviews__card-name {
-    display: block;
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
@@ -522,10 +526,12 @@ Reviews
 }
 .reviews__card-post {
     font-size: 12px;
-    font-weight: 400;
     line-height: 16px;
+    color: var(--text-muted);
 }
 .reviews__card-stars {
+    display: flex;
+    gap: 8px;
 }
 /*
 ===============
