@@ -541,15 +541,58 @@ Feedback
 .feedback {
     padding-bottom: 80px;
 }
-.feedback__top{
+.feedback__top {
     text-align: center;
-}
-.feedback__title {
-    margin: 0 auto;
 }
 .feedback__text {
     margin: 0 auto;
     max-width: 830px;
+    margin-bottom: 80px;
+}
+.feedback__content {
+    display: flex;
+    
+}
+.feedback__img{
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+}
+.feedback__form {
+    padding: 56px 48px;
+    background-color: #2DA884;
+    border-radius: 0px 16px 16px 0;
+}
+.feedback__form-interaction{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback__form-label{
+    margin-bottom: 16px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white-text-color);
+}
+.feedback__form-input{
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid var(--ui-color);
+    border-radius: 40px;
+    
+    &::placeholder{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--white-text-color);
+    }
+}
+.feedback__form-btn {
+    padding: 24px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
 }
 /*
 ===============

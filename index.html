@@ -202,7 +202,7 @@
     </section>
 
     <!-- Prices -->
-    <section class="prices">
+    <section class="prices none">
       <div class="container">
         <div class="prices__top">
           <h2 class="title">Pricing <span class="text-green">Table</span></h2>
@@ -279,7 +279,7 @@
     </section>
 
     <!-- Reviews -->
-    <section class="reviews">
+    <section class="reviews none">
       <div class="container">
         <div class="reviews__top">
           <h2 class="title">See What They Are Saying<br><span class="text-green">About EcoSculpt</span></h2>
@@ -381,19 +381,33 @@
     </section>
 
     <!-- Feedback -->
-    <section class="feedback none">
+    <section class="feedback">
       <div class="container">
         <div class="feedback__top">
-          <h2 class="feedback__title title"><span class="text-green">Contact </span>Us</h2>
+          <h2 class="title"><span class="text-green">Contact </span>Us</h2>
           <p class="feedback__text text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue  ante. Vivamus ut sapien et ex volutpat tincidunt at felis nunc eget congue  ante. Vivamus ut sapien.
           </p>
         </div>
-        
-        <form class="form"></form>
+        <div class="feedback__content">
+          <img class="feedback__img" src="images/feedback__form.jpg" alt="Garden">
+          <!-- form -->
+          <form action="#" class="feedback__form">
+            <div class="feedback__form-interaction">
+              <label class="feedback__form-label" for="name">Full name</label>
+              <input class="feedback__form-input" type="text" id="name" placeholder="Enter your full name">
+              
+              <label class="feedback__form-label" for="email">Email</label>
+              <input class="feedback__form-input" type="email" id="email" placeholder="Enter your email">
+              
+              <label class="feedback__form-label" for="message">Message</label>
+              <input class="feedback__form-input" type="text" id="message" placeholder="Enter your message">
+            </div>
+            <input class="feedback__form-btn" type="submit" value="Read More">
+          </form>
+        </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer none">
