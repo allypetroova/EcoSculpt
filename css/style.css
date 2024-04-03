@@ -3,6 +3,7 @@
 Fonts and styles
 ===============
 */
+@import "buttons&links.css";
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 /*
@@ -103,31 +104,6 @@ body{
         content: url(./../images/icons/arrow.svg);
         height: 24px;
     }
-}
-
-/* Header buttons */
-
-.nav__buttons {
-    display: flex;
-    gap: 32px;
-}
-.header__btn {
-    padding: 16px 40px;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 100px;
-}
-.header__btn--big{
-    padding: 32px 40px;
-}
-.btn-green {
-    color: var(--white-text-color);
-    background-color: var(--accent);
-}
-.btn-white {
-    color: var(--accent);
-    background-color: var(--ui-color);
 }
 .header__content {
     text-align: center;
@@ -404,17 +380,6 @@ Prices
     line-height: 24px;
     color: var(--white-text-color);
 }
-.prices__desc-type {
-    padding: 16px 19px;
-    color: var(--accent);
-    background-color: var(--ui-color);
-}
-.prices__button{
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 100px;
-}
 .prices__payment {
     display: flex;
     flex-direction: column;
@@ -458,11 +423,6 @@ Prices
 }
 .prices__services-item:last-child{
     margin-bottom: 0;
-}
-.prices__services-btn {
-    padding: 24px 40px;
-    color: var(--white-text-color);
-    background-color: var(--accent);
 }
 /*
 ===============
@@ -536,15 +496,12 @@ Reviews
 }
 .reviews__card-img {
     position: absolute;
-    z-index: 2;
     left: 0;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 80px;
     width: 80px;
     border-radius: 50%;
-}
-.reviews__card-content {
 }
 .reviews__card_text{
     margin-bottom: 40px;
@@ -651,27 +608,8 @@ Blog
 .blog__article-acces {
     background-image: url("../images/icons/blog__article-acces.svg");
 }
-
-/* ------- */
-
 .blog__article-text {
     color: var(--text-muted);
-}
-.blog__article-btn {
-    position: absolute;
-    z-index: 1;
-    padding: 24px 40px;
-    width: 100%;
-    height: 72px;
-
-    text-align: center;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 24px;
-
-    color: var(--white-text-color);
-    background-color: var(--accent);
-    border-radius: 100px;
 }
 /*
 ===============
@@ -731,16 +669,6 @@ Feedback
 }
 .feedback__form-input:last-child{
     margin-bottom: 0;
-}
-.feedback__form-btn {
-    padding: 24px;
-    width: 100%;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 24px;
-    color: var(--accent);
-    border-radius: 100px;
-    background-color: var(--ui-color);
 }
 /*
 ===============
