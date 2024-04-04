@@ -532,6 +532,57 @@ Reviews
 }
 /*
 ===============
+Questions
+===============
+*/
+.questions {
+    padding-bottom: 160px;
+}
+.questions__top {
+    text-align: center;
+}
+.questions__text {
+    margin: 0 auto;
+    max-width: 978px;
+    margin-bottom: 80px;
+}
+.questions__list {
+    display: grid;
+    gap: 40px;
+}
+.questions__item {
+    padding: 48px 132px 48px 44px;
+    color: var(--text-color);
+    background-color: var(--ui-color);
+    border-radius: 16px;
+    box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
+
+    background-image: url("../images/icons/questions__arrow.png");
+    background-repeat: no-repeat;
+    background-position: top 50% right 44px;
+
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--accent);
+        color: var(--white-text-color);
+        background-image: url("../images/icons/questions__arrow-hover.png");
+    }
+}
+.questions__item-title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.questions__item-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+/*
+===============
 Blog
 ===============
 */
