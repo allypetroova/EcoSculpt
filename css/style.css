@@ -730,3 +730,54 @@ Footer
     padding: 100px 0;
     background-color: #2DA884;
 }
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__desc {
+}
+.footer__logo {
+    margin-bottom: 40px;
+}
+.footer__text {
+    max-width: 270px;
+    color: var(--white-text-color);
+}
+.footer__nav {
+}
+.footer__title {
+    margin-bottom: 40px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white-text-color);
+}
+.footer__list {
+    display: grid;
+    gap: 16px;
+}
+.footer__list-item {
+    
+}
+.footer__contact {
+}
+.footer__list-link {
+}
+.mail {
+}
+.location {
+}
+.phone {
+}
+.footer__net {
+}
+.footer__net-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.footer__net-link {
+}
+.footer__net-img {
+}
