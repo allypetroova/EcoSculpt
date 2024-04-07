@@ -54,6 +54,7 @@ body{
     line-height: 72px;
     color: var(--text-color);
     text-transform: capitalize;
+    text-wrap: balance;
 
     @media (max-width: 720px){
         font-size: 54px;
@@ -70,12 +71,23 @@ body{
     font-weight: 600;
     line-height: 32px;
     color: var(--text-color);
+
+    @media (max-width: 720px){
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    @media (max-width: 420px){
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 .text{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     font-family: var(--font-second);
+    text-wrap: balance;
 
     @media (max-width: 720px){
         font-size: 14px;
@@ -242,6 +254,7 @@ Expertise
     margin-right: 96px;
 
     @media (max-width: 1080px){
+        flex-basis: 0;
         margin-right: 0;
     }
 }
@@ -284,18 +297,38 @@ Benefits
 */
 .benefits {
     padding-bottom: 140px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 80px;
+    }
 }
 .benefits__inner {
     display: flex;
+
+    @media (max-width: 1080px){
+        flex-direction: column-reverse;
+    }
 }
 .benefits-img {
     flex-basis: 538px;
     margin-right: 96px;
     object-fit: cover;
     border-radius: 16px;
+
+    @media (max-width: 1080px){
+        flex-basis: 0;
+        margin-right: 0;
+        height: 400px;
+        object-position: bottom;
+    }
 }
 .benefits__content {
     flex-basis: 610px;
+
+    @media (max-width: 1080px){
+        flex-basis: 0;
+        margin-bottom: 40px;
+    }
 }
 .benefits__top{
     margin-bottom: 40px;
@@ -310,6 +343,11 @@ Benefits
     background-image: url(../images/checkbox.svg);
     background-repeat: no-repeat;
     background-position: left;
+
+    @media (max-width: 720px){
+        padding: 8px 8px 8px 56px;
+        background-size: 32px;
+    }
 }
 /*
 ===============
