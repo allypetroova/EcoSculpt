@@ -740,6 +740,10 @@ Blog
 */
 .blog {
     padding-bottom: 160px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 100px;
+    }
 }
 .blog__top{
     text-align: center;
@@ -753,6 +757,10 @@ Blog
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+
+    @media (max-width: 980px){
+        grid-template-columns: none;
+    }
 }
 .blog__article {
     position: relative;
