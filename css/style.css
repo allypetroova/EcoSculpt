@@ -623,6 +623,10 @@ Reviews
 */
 .reviews {
     padding-bottom: 160px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 100px;
+    }
 }
 .reviews__top {
     text-align: center;
@@ -631,12 +635,25 @@ Reviews
     margin: 0 auto;
     max-width: 940px;
     margin-bottom: 80px;
+
+    @media (max-width: 1080px){
+        margin-bottom: 40px;
+    }
 }
 .reviews__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
+
+    @media (max-width: 980px){
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+
+    @media (max-width: 500px){
+        gap: 32px;
+    }
 }
 .reviews__card {
     position: relative;
@@ -645,6 +662,11 @@ Reviews
     background-color: var(--ui-color);
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
     border-radius: 16px;
+
+    @media (max-width: 500px){
+        padding: 24px 28px 24px 48px;
+        margin-left: 32px;
+    }
 }
 .reviews__card-img {
     position: absolute;
@@ -654,14 +676,29 @@ Reviews
     height: 80px;
     width: 80px;
     border-radius: 50%;
+
+    @media (max-width: 500px){
+        height: 64px;
+        width: 64px;
+    }
 }
 .reviews__card_text{
     margin-bottom: 40px;
+
+    @media (max-width: 500px){
+        margin-bottom: 28px;
+    }
 }
 .reviews__card-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 720px){
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 10px;
+    }
 }
 .reviews__card-user {
     display: flex;
@@ -672,6 +709,10 @@ Reviews
     font-weight: 600;
     line-height: 32px;
     color: var(--text-color);
+
+    @media (max-width: 720px){
+        font-size: 26px;
+    }
 }
 .reviews__card-post {
     font-size: 12px;
