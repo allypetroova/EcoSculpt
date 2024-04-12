@@ -870,6 +870,10 @@ Feedback
 */
 .feedback {
     padding-bottom: 80px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 60px;
+    }
 }
 .feedback__top {
     text-align: center;
@@ -878,13 +882,33 @@ Feedback
     margin: 0 auto;
     max-width: 830px;
     margin-bottom: 80px;
+
+    @media (max-width: 1080px){
+        margin-bottom: 40px;
+    }
 }
 .feedback__content {
     display: flex;
+
+    @media (max-width: 720px){
+        display: block;
+    }
 }
 .feedback__img{
     object-fit: cover;
     border-radius: 16px 0 0 16px;
+
+    @media (max-width: 1080px){
+        width: 400px;
+    }
+
+    @media (max-width: 840px){
+        width: 300px;
+    }
+
+    @media (max-width: 720px){
+        display: none;
+    }
 }
 .feedback__form {
     padding: 56px 48px;
@@ -892,6 +916,14 @@ Feedback
     width: 716px;
     background-color: #2DA884;
     border-radius: 0px 16px 16px 0;
+
+    @media (max-width: 840px){
+        padding: 48px 32px;
+    }
+
+    @media (max-width: 720px){
+        border-radius: 16px;
+    }
 }
 .feedback__form-interaction{
     margin-bottom: 40px;
