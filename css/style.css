@@ -730,6 +730,10 @@ Questions
 */
 .questions {
     padding-bottom: 160px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 100px;
+    }
 }
 .questions__top {
     text-align: center;
@@ -738,6 +742,10 @@ Questions
     margin: 0 auto;
     max-width: 978px;
     margin-bottom: 80px;
+
+    @media (max-width: 1080px){
+        margin-bottom: 40px;
+    }
 }
 .questions__list {
     display: grid;
@@ -762,17 +770,31 @@ Questions
         color: var(--white-text-color);
         background-image: url("../images/icons/questions__arrow-hover.png");
     }
+
+    @media (max-width: 500px){
+        padding: 32px 92px 32px 44px;
+        background-position: top 50% right 28px;
+    }
 }
 .questions__item-title {
     margin-bottom: 16px;
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
+
+    @media (max-width: 720px){
+        font-size: 24px;
+    }
 }
 .questions__item-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+
+    @media (max-width: 720px){
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 /*
 ===============
