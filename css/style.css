@@ -990,16 +990,12 @@ Footer
     justify-content: space-between;
     align-items: center;
 }
-.footer__desc {
-}
 .footer__logo {
     margin-bottom: 40px;
 }
 .footer__text {
     max-width: 270px;
     color: var(--white-text-color);
-}
-.footer__nav {
 }
 .footer__title {
     margin-bottom: 40px;
@@ -1012,27 +1008,41 @@ Footer
     display: grid;
     gap: 16px;
 }
-.footer__list-item {
-    
-}
-.footer__contact {
-}
 .footer__list-link {
+    color: var(--white-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
-.mail {
+
+/* Footer contact */
+
+.footer__contact {
+    max-width: 294px;
+}
+.footer__contact-link{
+    padding-left: 24px;
+    background-position: top 4px left 0;
+    background-repeat: no-repeat;
+}
+.email {
+    background-image: url("../images/icons/footer__email.svg");
 }
 .location {
+    background-image: url("../images/icons/footer__location.svg");
 }
 .phone {
+    background-image: url("../images/icons/footer__phone.svg");
 }
-.footer__net {
-}
+
+/* Footer net */
+
 .footer__net-list {
     display: flex;
     gap: 32px;
     align-items: center;
 }
-.footer__net-link {
-}
 .footer__net-img {
+    height: 40px;
+    width: 40px;
 }
