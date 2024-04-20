@@ -583,6 +583,10 @@ Gallery
 */
 .gallery {
     padding-bottom: 160px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 100px;
+    }
 }
 .gallery__top {
     text-align: center;
@@ -591,6 +595,10 @@ Gallery
     margin: 0 auto;
     max-width: 730px;
     margin-bottom: 80px;
+
+    @media (max-width: 1080px){
+        margin-bottom: 40px;
+    }
 }
 
 /* Gallery list */
@@ -599,13 +607,22 @@ Gallery
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: clamp(20px, -0.052rem + 4.17vw, 40px);
+
+    @media (max-width: 720px){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media (max-width: 420px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 .gallery__list-link:nth-child(1), .gallery__list-link:nth-child(4){
     grid-column: span 2;
     grid-row: span 2;
 }
-
 .gallery__list-link:nth-child(5){
     grid-column: span 2;
 }
@@ -683,11 +700,7 @@ Reviews
     }
 }
 .reviews__card_text{
-    margin-bottom: 40px;
-
-    @media (max-width: 500px){
-        margin-bottom: 28px;
-    }
+    margin-bottom: clamp(28px, 0.969rem + 2.5vw, 40px);
 }
 .reviews__card-bottom {
     display: flex;
