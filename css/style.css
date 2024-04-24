@@ -111,6 +111,9 @@ body{
     gap: 77px;
     align-items: center;
 }
+.nav__list-item{
+    position: relative;
+}
 .nav__list-link {
     font-size: 16px;
     font-weight: 600;
@@ -135,14 +138,28 @@ body{
 
 /* Sub navigation */
 
+.nav__list-item:hover .nav-list__sub-nav{
+    pointer-events: all;
+    opacity: 1;
+}
 .nav-list__sub-nav {
-    padding: 16px 24px;
-    background-color: var(--accent);
-    border-radius: 16px;
+    opacity: 0;
+    width: 140px;
+    pointer-events: none;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    transition: all 0.2s ease-in;
 }
 .sub-nav {
     display: grid;
     gap: 16px;
+
+    padding: 16px 24px;
+    background-color: var(--accent);
+    border-radius: 16px;
 }
 .sub-nav__link {
     font-size: 16px;
@@ -171,6 +188,7 @@ body{
     margin: 0 auto;
     max-width: 698px;
     margin-bottom: 56px;
+    color: var(--white-text-color);
 }
 .header__buttons {
     margin: 0 auto;
@@ -489,6 +507,10 @@ Prices
 */
 .prices {
     padding-bottom: 160px;
+
+    @media (max-width: 1080px){
+        padding-bottom: 100px;
+    }
 }
 .prices__top {
     text-align: center;
@@ -497,10 +519,14 @@ Prices
     margin: 0 auto;
     max-width: 730px;
     margin-bottom: 80px;
+
+    @media (max-width: 1080px){
+        margin-bottom: 40px;
+    }
 }
 .prices__tabs {
     display: grid;
-    grid-template-columns: repeat(3, 388px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 .prices__tab {
