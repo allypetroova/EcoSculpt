@@ -15,7 +15,7 @@
 
       <div class="header__nav">
         <div class="nav__logo">
-          <a class="logo" href="#!">EcoSculpt</a>
+          <a class="logo" href="#">EcoSculpt</a>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -576,27 +576,27 @@
     <!-- Feedback -->
     <section class="feedback">
       <div class="container">
-        <div class="feedback__top">
-          <h2 class="title"><span class="text-green">Contact </span>Us</h2>
-          <p class="feedback__text text">
+        <div class="feedback-top">
+          <h2 class="title"><b class="title-green">Contact</b> Us</h2>
+          <p class="feedback__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue  ante. Vivamus ut sapien et ex volutpat tincidunt at felis nunc eget congue  ante. Vivamus ut sapien.
           </p>
         </div>
-        <div class="feedback__content">
+        <div class="feedback-content">
           <img class="feedback__img" src="images/feedback__form.jpg" alt="Garden">
           <!-- form -->
-          <form action="#" class="feedback__form">
-            <div class="feedback__form-interaction">
-              <label class="feedback__form-label" for="name">Full name</label>
-              <input class="feedback__form-input" type="text" id="name" placeholder="Enter your full name">
+          <form class="feedback-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="feedback-form__interaction">
+              <label class="feedback-form__label">Full name</label>
+              <input class="feedback-form__input" type="text" name="name" placeholder="Enter your full name">
               
-              <label class="feedback__form-label" for="email">Email</label>
-              <input class="feedback__form-input" type="email" id="email" placeholder="Enter your email">
+              <label class="feedback-form__label">Email</label>
+              <input class="feedback-form__input" type="email" name="email" placeholder="Enter your email" required>
               
-              <label class="feedback__form-label" for="message">Message</label>
-              <input class="feedback__form-input" type="text" id="message" placeholder="Enter your message">
+              <label class="feedback-form__label">Message</label>
+              <textarea class="feedback-form__input" name="message" placeholder="Enter your message" rows="1"></textarea>
             </div>
-            <button class="base__btn btn-white section__btn" type="submit">Read More</button>
+            <button class="feedback__btn" type="submit">Read More</button>
           </form>
         </div>
       </div>
@@ -607,16 +607,14 @@
     <div class="container">
       <div class="footer__wrapper">
         <!-- footer desc -->
-        <div class="footer__desc">
-          <div class="footer__logo">
-            <a class="logo" href="#">EcoSculpt</a>
-          </div>
-          <p class="footer__text text">
+        <div class="footer-desc">
+          <a class="footer-desc__logo logo" href="#">EcoSculpt</a>
+          <small class="footer__text">
             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Vivamus hes ndrerit suscipit egestas. 
-          </p>
+          </small>
         </div>
         <!-- footer nav -->
-        <nav class="footer__nav">
+        <nav class="footer-nav">
           <h4 class="footer__title">Quick Links</h4>
           <ul class="footer__list">
             <li class="footer__list-item">
@@ -634,42 +632,42 @@
           </ul>
         </nav>
         <!-- footer contact -->
-        <div class="footer__contact">
+        <div class="footer-contact">
           <h4 class="footer__title">Contact Us</h4>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link footer__contact-link email" href="mailto:hello@website.com">hello@website.com</a>
+              <a class="footer__list-link footer-contact__link footer-contact__link--email" href="mailto:hello@website.com">hello@website.com</a>
             </li>
             <li class="footer__list-item">
-              <address class="footer__list-link footer__contact-link location">Riverside Building, County Hall, London SE1 7PB, United Kingdom</address>
+              <address class="footer__list-link footer-contact__link footer-contact__link--location">Riverside Building, County Hall, London SE1 7PB, United Kingdom</address>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link footer__contact-link phone" href="tel:+025421234560">+02 5421234560</a>
+              <a class="footer__list-link footer-contact__link footer-contact__link--phone" href="tel:+025421234560">+02 5421234560</a>
             </li>
           </ul>
         </div>
         <!-- footer net -->
-        <div class="footer__net">
+        <div class="footer-net">
           <h4 class="footer__title">Follow Us</h4>
-          <ul class="footer__net-list">
-            <li class="footer__net-item">
-              <a class="footer__net-link" href="#">
-                <img class="footer__net-img" src="images/twitter.svg" alt="Twitter">
+          <ul class="footer-net__list">
+            <li class="footer-net__item">
+              <a class="footer-net__link" href="#">
+                <img src="images/twitter.svg" alt="Twitter">
               </a>
             </li>
-            <li class="footer__net-item">
-              <a class="footer__net-link" href="#">
-              <img class="footer__net-img" src="images/instagram.svg" alt="Instagram">
+            <li class="footer-net__item">
+              <a class="footer-net__link" href="#">
+              <img src="images/instagram.svg" alt="Instagram">
             </a>
             </li>
-            <li class="footer__net-item">
-              <a class="footer__net-link" href="#">
-                <img class="footer__net-img" src="images/facebook.svg" alt="Facebook">
+            <li class="footer-net__item">
+              <a class="footer-net__link" href="#">
+                <img src="images/facebook.svg" alt="Facebook">
               </a>
             </li>
-            <li class="footer__net-item">
-              <a class="footer__net-link" href="#">
-                <img class="footer__net-img" src="images/youtube.svg" alt="YouTube">
+            <li class="footer-net__item">
+              <a class="footer-net__link" href="#">
+                <img src="images/youtube.svg" alt="YouTube">
               </a>
             </li>
           </ul>
