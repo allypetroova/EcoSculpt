@@ -88,11 +88,6 @@ body{
     line-height: 24px;
     font-family: var(--font-second);
     color: var(--text-muted);
-
-    @media (max-width: 720px){
-        font-size: 14px;
-        line-height: 20px;
-    }
 }
 .header__nav {
     margin-bottom: 104px;
@@ -608,55 +603,45 @@ Gallery
 ===============
 */
 .gallery {
-    padding-bottom: 160px;
-
-    @media (max-width: 1080px){
-        padding-bottom: 100px;
-    }
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .gallery__top {
     text-align: center;
 }
+
 .gallery__text {
     margin: 0 auto;
     max-width: 730px;
     margin-bottom: 80px;
-
-    @media (max-width: 1080px){
-        margin-bottom: 40px;
-    }
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--font-second);
+    color: var(--text-muted);
 }
-
-/* Gallery list */
 
 .gallery__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: clamp(20px, -0.052rem + 4.17vw, 40px);
-
-    @media (max-width: 720px){
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    @media (max-width: 420px){
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+    gap: 40px;
 }
+
 .gallery__list-link:nth-child(1), .gallery__list-link:nth-child(4){
     grid-column: span 2;
     grid-row: span 2;
 }
+
 .gallery__list-link:nth-child(5){
     grid-column: span 2;
 }
+
 .gallery__list-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     border-radius: 16px;
 }
 /*
@@ -665,99 +650,82 @@ Reviews
 ===============
 */
 .reviews {
-    padding-bottom: 160px;
-
-    @media (max-width: 1080px){
-        padding-bottom: 100px;
-    }
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .reviews__top {
     text-align: center;
 }
+
 .reviews__text{
     margin: 0 auto;
     max-width: 940px;
     margin-bottom: 80px;
-
-    @media (max-width: 1080px){
-        margin-bottom: 40px;
-    }
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--font-second);
+    color: var(--text-muted);
 }
+
 .reviews__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
-
-    @media (max-width: 980px){
-        grid-template-columns: none;
-        grid-template-rows: none;
-    }
-
-    @media (max-width: 500px){
-        gap: 32px;
-    }
 }
+
 .reviews__card {
     position: relative;
-    padding: 32px 40px 32px 65px;
     margin-left: 44px;
+    padding: 32px 40px 32px 65px;
     background-color: var(--ui-color);
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
     border-radius: 16px;
-
-    @media (max-width: 500px){
-        padding: 24px 28px 24px 48px;
-        margin-left: 32px;
-    }
 }
+
 .reviews__card-img {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 80px;
-    width: 80px;
     border-radius: 50%;
+}
 
-    @media (max-width: 500px){
-        height: 64px;
-        width: 64px;
-    }
-}
 .reviews__card_text{
-    margin-bottom: clamp(28px, 0.969rem + 2.5vw, 40px);
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--font-second);
+    color: var(--text-muted);
 }
+
 .reviews__card-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 720px){
-        flex-direction: column-reverse;
-        align-items: start;
-        gap: 10px;
-    }
 }
+
 .reviews__card-user {
     display: flex;
     flex-direction: column;
 }
+
 .reviews__card-name {
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
     color: var(--text-color);
-
-    @media (max-width: 720px){
-        font-size: 26px;
-    }
 }
+
 .reviews__card-post {
     font-size: 12px;
     line-height: 16px;
     color: var(--text-muted);
 }
+
 .reviews__card-stars {
     display: flex;
     gap: 8px;
