@@ -80,7 +80,6 @@ body{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    font-family: var(--font-second);
     color: var(--text-muted);
 }
 /*
@@ -258,61 +257,51 @@ Expertise
 ===============
 */
 .expertise {
-    padding: 80px 0 160px;
-
-    @media (max-width: 1080px){
-       padding: 60px 0 100px;
-    }
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .expertise__top{
     margin-bottom: 80px;
     max-width: 823px;
-    text-align: left;
-
-    @media (max-width: 1080px){
-        margin-bottom: 40px;
-    }
 }
-.expertise__inner {
+
+.expertise__text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-muted);
+}
+
+.expertise__content {
     display: flex;
-
-    @media (max-width: 1080px){
-        display: block;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.expertise__cards {
-    flex-basis: 552px;
-    margin-right: 96px;
 
-    @media (max-width: 1220px){
-        margin-right: 66px;
-    }
-
-    @media (max-width: 1080px){
-        flex-basis: 0;
-        margin-right: 0;
-    }
-}
 .expertise__card {
+    margin-bottom: 40px;
+    max-width: 552px;
     padding: 128px 24px 40px;
     background-color: var(--ui-color);
     border-radius: 16px;
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
-
     background-repeat: no-repeat;
     background-position: top 40px left 24px;
 }
-.expertise__card-1 {
-    margin-bottom: 40px;
-    background-image: url(../images/icons/expertise__card-1.svg);
 
-    @media (max-width: 420px){
-        margin-bottom: 20px;
-    }
+.expertise__card:last-child{
+    margin-bottom: 0;
 }
-.expertise__card-2 {
-    background-image: url(../images/icons/expertise__card-2.svg);
+
+.expertise__card-mission {
+    background-image: url(../images/icons/card-mission.svg);
 }
+
+.expertise__card-vision {
+    background-image: url(../images/icons/card-vision.svg);
+}
+
 .expertise__card-title {
     margin-bottom: 16px;
     font-size: 28px;
@@ -320,14 +309,18 @@ Expertise
     font-weight: 600;
     color: var(--text-color);
 }
-.expertise__inner-img {
-    flex-basis: 596px;
+
+.expertise__card-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--font-second);
+    color: var(--text-muted);
+}
+
+.expertise__content-img {
     object-fit: cover;
     border-radius: 16px;
-
-    @media (max-width: 1080px){
-        display: none;
-    }
 }
 /*
 ===============
@@ -335,62 +328,49 @@ Benefits
 ===============
 */
 .benefits {
-    padding-bottom: 140px;
-
-    @media (max-width: 1080px){
-        padding-bottom: 80px;
-    }
+    padding-bottom: 60px;
+    padding-top: 80px;
 }
+
 .benefits__inner {
     display: flex;
-
-    @media (max-width: 1080px){
-        flex-direction: column-reverse;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.benefits-img {
-    flex-basis: 538px;
-    margin-right: 96px;
+
+.benefits__img {
     object-fit: cover;
     border-radius: 16px;
-
-    @media (max-width: 1080px){
-        flex-basis: 0;
-        margin-right: 0;
-        height: 400px;
-        object-position: bottom;
-    }
 }
-.benefits__content {
-    flex-basis: 610px;
 
-    @media (max-width: 1080px){
-        flex-basis: 0;
-        margin-bottom: 40px;
-    }
+.benefits__content{
+    width: 100%;
+    max-width: 586px;
 }
-.benefits__top{
+
+.benefits__text{
     margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--font-second);
+    color: var(--text-muted);
 }
-.benefits__list{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 
-    @media (max-width: 420px){
-        gap: 20px;
-    }
-}
 .benefits__list-item {
-    padding: 8px 8px 8px 72px;
+    margin-bottom: 40px;
+    padding: 8px 72px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--text-color);
     background-image: url(../images/checkbox.svg);
     background-repeat: no-repeat;
     background-position: left;
+}
 
-    @media (max-width: 720px){
-        padding: 8px 8px 8px 56px;
-        background-size: 32px;
-    }
+.benefits__list-item:last-child{
+    margin-bottom: 0;
 }
 /*
 ===============
@@ -636,7 +616,6 @@ Gallery
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    font-family: var(--font-second);
     color: var(--text-muted);
 }
 
@@ -683,7 +662,6 @@ Reviews
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    font-family: var(--font-second);
     color: var(--text-muted);
 }
 
@@ -716,7 +694,6 @@ Reviews
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    font-family: var(--font-second);
     color: var(--text-muted);
 }
 
