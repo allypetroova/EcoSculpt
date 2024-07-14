@@ -403,29 +403,24 @@ Services
 }
 
 .services__card {
-    padding: 128px 24px 40px 24px;
-    background-repeat: no-repeat;
-    background-position: top 40px left 24px;
+    padding: 40px 24px;
     background-color: var(--ui-color);
     border-radius: 16px;
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
     transition: all 0.1s ease-in;
-
-    &:hover{
-        background-color: var(--accent);
-    }
 }
 
-.services__card:hover .services__card-title{
-    color: var(--white-text-color);
+.services__card:hover {
+    background-color: var(--accent);
 }
 
-.services__card:hover .title-green{
-    color: var(--white-text-color);
+.services__card-icon{
+    margin-bottom: 24px;
+    fill: var(--accent);
 }
 
-.services__card:hover .services__card-text{
-    color: var(--white-text-color);
+.services__card:hover .services__card-icon{
+    fill: var(--ui-color);
 }
 
 .services__card-title {
@@ -436,6 +431,14 @@ Services
     color: var(--text-color);
 }
 
+.services__card:hover .services__card-title{
+    color: var(--white-text-color);
+}
+
+.services__card:hover .title-green{
+    color: var(--white-text-color);
+}
+
 .services__card-text{
     font-size: 16px;
     font-weight: 500;
@@ -444,47 +447,8 @@ Services
     font-family: var(--font-second);
 }
 
-.services__card-1 {
-    background-image: url(../images/icons/services__card-1.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-1-white.svg);
-    }
-}
-.services__card-2 {
-    background-image: url(../images/icons/services__card-2.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-2-white.svg);
-    }
-}
-.services__card-3 {
-    background-image: url(../images/icons/services__card-3.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-3-white.svg);
-    }
-}
-.services__card-4 {
-    background-image: url(../images/icons/services__card-4.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-4-white.svg);
-    }
-}
-.services__card-5 {
-    background-image: url(../images/icons/services__card-5.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-5-white.svg);
-    }
-}
-.services__card-6 {
-    background-image: url(../images/icons/services__card-6.svg);
-
-    &:hover{
-        background-image: url(../images/icons/services__card-6-white.svg);
-    }
+.services__card:hover .services__card-text{
+    color: var(--white-text-color);
 }
 /*
 ===============
@@ -497,23 +461,31 @@ Prices
 }
 
 .prices__top {
+    margin-bottom: 80px;
     text-align: center;
 }
+
 .prices__text{
     margin: 0 auto;
     max-width: 730px;
-    margin-bottom: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-muted);
 }
+
 .prices__tabs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
+
 .prices__tab {
     background-color: var(--ui-color);
     box-shadow: 18px 15px 35px 0 rgb(0, 0, 0, 9%);
     border-radius: 16px;
 }
+
 .prices__tab-1{
     max-height: 712px;
 }
@@ -791,36 +763,35 @@ Blog
 ===============
 */
 .blog {
-    padding-bottom: 160px;
-
-    @media (max-width: 1080px){
-        padding-bottom: 100px;
-    }
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .blog__top{
+    margin-bottom: 80px;
     text-align: center;
 }
+
 .blog__text {
     margin: 0 auto;
     max-width: 712px;
-    margin-bottom: 80px;
-
-    @media (max-width: 1080px){
-        margin-bottom: 40px;
-    }
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-muted);
+    font-family: var(--font-second);
 }
+
 .blog__articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-
-    @media (max-width: 980px){
-        grid-template-columns: none;
-    }
 }
+
 .blog__article {
     position: relative;
 }
+
 .blog__article-link{
     position: absolute;
     top: 0;
@@ -828,67 +799,68 @@ Blog
     width: 100%;
     height: 100%;
 }
+
 .blog__article-img {
     margin-bottom: 24px;
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
     border-radius: 16px;
 }
-.blog__article-content {
-    margin-bottom: 40px;
-    display: grid;
-    gap: 16px;
-}
+
 .blog__article-type{
+    display: inline-block;
+    position: relative;
     z-index: 1;
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: var(--accent);
 }
+
 .blog__article-title {
+    margin-bottom: 16px;
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
     color: var(--text-color);
-
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    @media (max-width: 980px){
-        font-size: 24px;
-    }
-
-    @media (max-width: 500px){
-        font-size: 21px;
-    }
 }
-
-/* Article data */
 
 .blog__article-data {
+    margin-bottom: 16px;
     display: flex;
-    gap: 8px;
     align-items: center;
+    font-family: var(--font-second);
 }
+
 .blog__article-property {
+    margin-right: 8px;
     padding-left: 32px;
     background-repeat: no-repeat;
     background-position: left;
 }
-.blog__article-comments {
+
+.blog__article-property:last-child{
+    margin-right: 0;
+}
+
+.blog__article-property--comments {
     background-image: url("../images/icons/blog__article-comments.svg");
 }
-.blog__article-views {
+
+.blog__article-property--views {
     background-image: url("../images/icons/blog__article-views.svg");
 }
-.blog__article-acces {
+
+.blog__article-property--acces {
     background-image: url("../images/icons/blog__article-acces.svg");
 }
+
 .blog__article-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     color: var(--text-muted);
+    font-family: var(--font-second);
 }
 /*
 ===============
